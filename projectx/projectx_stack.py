@@ -13,7 +13,13 @@ class ProjectxStack(Stack):
                    "myfirstbucket",
                    bucket_name='s3newpiyusbhomale1999',
                    versioned= True,
-                   encryption=_s3.BucketEncryption.KMS_MANAGED)
+                   encryption=_s3.BucketEncryption.S3_MANAGED,
+                   block_public_access=_s3.BlockPublicAccess.BLOCK_ALL)
+        my_bucket = _s3.Bucket(self,
+                               'Mynewbucketpiyushbhomale1999',
+                               bucket_name='notcorebucket')
+
+
 
         # The code that defines your stack goes here
 
